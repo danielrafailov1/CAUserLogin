@@ -228,6 +228,7 @@ by typing `git status` and reading the first line of output. Use `git switch` if
 
 1. Add one more line before the Output Data is created:
 ```
+      userDataAccessObject.setCurrentUser(user.getName());
 ```
 IntelliJ won't like that: the `setCurrentUser` method doesn't exist. Get IntelliJ to generate
 the method for you. Notice that it puts it into the `LoginUserDataAccessInterface`. That causes a problem with
